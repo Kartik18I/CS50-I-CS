@@ -3,10 +3,10 @@
 int main(void)
 {
     // For each row
-   for (int i = 0; i < 3; i++)
+   for (int row = 0; row < 3;row++)
    {
     // for each column
-    for (int j = 0; j < 3; j++)
+    for (int column = 0; column < 3; column++)
     {
         //print one brick
 
