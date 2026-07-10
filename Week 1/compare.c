@@ -10,4 +10,7 @@ int main (void)
     {
         printf("x is less than y\n");
     }
+    ekse {
+        printf("x is not less that y\n");
+    }
 }
