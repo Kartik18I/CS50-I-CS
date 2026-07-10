@@ -3,13 +3,18 @@
 
 int main(void)
 {
- int n = get_int("what's n?");
- if (n < 0 )
- {
-    n = get_int("whats's n?");
+    while (true)
+{
+    int n = get_int("What's n? ");
     if (n < 0)
- }
-
+    {
+        continue;
+    }
+    else
+    {
+        break;
+    }
+}
  for (int i = 0; i < n; i++)
  {
     printf("meow\n");
