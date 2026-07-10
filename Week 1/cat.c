@@ -2,19 +2,26 @@
 #include<stdio.h>
 
 //Prototype
-void meow(void);
+int get_n(void);
+void meow(int times);
 
 int main (void)
 {
-    int n = get_int("what's n?");
-    meow();
+    // Get a number from user
+    int n = get_n();
+
+    meow(n);
 }
 
+int get_n(void);
+{
+    int n;
+    dp
+    {
+        n = get_int("What's n?");
+    }
+    while (n < 0);
+    return n;
+}
 
-void meow(void)
-{
-    for (int i = 0; i < n; i++)
-{
-    printf("meow\n");
-}
-}
+coid meow(int times)
