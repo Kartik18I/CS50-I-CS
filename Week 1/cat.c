@@ -15,6 +15,7 @@ int main(void)
         break;
     }
 }
+
  for (int i = 0; i < n; i++)
  {
     printf("meow\n");
