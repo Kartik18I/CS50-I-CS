@@ -10,7 +10,7 @@ int main(void)
     if (c == 'y')
 
 {
-    dolar *= 2;
+    dollars *= 2;
 }
 else
 {
