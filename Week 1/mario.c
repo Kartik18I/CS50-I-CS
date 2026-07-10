@@ -2,9 +2,16 @@
 
 int main(void)
 {
-   for (int i = 0; i < 4; i++)
+    // For each row
+   for (int i = 0; i < 3; i++)
    {
-    printf("#\n");
+    // for each column
+    for (int j = 0; j < 3; j++)
+    {
+        //print one brick
+        
+        printf("#");
+    }
    }
 
 }
