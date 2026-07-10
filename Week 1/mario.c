@@ -9,9 +9,10 @@ int main(void)
     for (int j = 0; j < 3; j++)
     {
         //print one brick
-        
+
         printf("#");
     }
+    printf("\n");
    }
 
 }
