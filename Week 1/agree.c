@@ -9,9 +9,9 @@ int main(void)
     {
         printf("Agreed.\n");
     }
-    else if (c == 'n')
+    else 
     {
-        printf("NOt agreed.\n");
+        printf("Not agreed.\n");
     }
 }
 
