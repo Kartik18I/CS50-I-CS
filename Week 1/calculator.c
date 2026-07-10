@@ -3,8 +3,18 @@
 
 int main(void)
 {
-    int x = get_int("What's x?");
-    int y = get_int("What's y?");
+   int dollars = 1;
+   while (true)
+   {
+    char c = get_char("Here's $%i. Double it and give to the next prson ? ",dollar);
+    if (c == 'y')
 
-    printf("%i\n", x + y);
+{
+    dolar *= 2;
+}
+else
+{
+    break;
+}
+   }
 }
