@@ -10,7 +10,12 @@ int main (void)
     {
         printf("x is less than y\n");
     }
-    ekse {
+    else if (x > y)
+    {
         printf("x is not less that y\n");
+    }
+    else
+    {
+        printf("x is equal ro y\n");
     }
 }
