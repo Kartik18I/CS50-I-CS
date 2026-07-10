@@ -1,27 +1,34 @@
-#include<cs50.h>
-#include<stdio.h>
+// Return value
 
-//Prototype
-int get_n(void);
-void meow(int times);
+#include <cs50.h>
+#include <stdio.h>
 
-int main (void)
+int get_positive_int(void);
+void meow(int n);
+
+int main(void)
 {
-    // Get a number from user
-    int n = get_n();
-
+    int n = get_positive_int();
     meow(n);
 }
 
-int get_n(void);
+// Get number of meows
+int get_positive_int(void)
 {
     int n;
-    dp
+    do
     {
-        n = get_int("What's n?");
+        n = get_int("Number: ");
     }
-    while (n < 0);
+    while (n < 1);
     return n;
 }
 
-coid meow(int times)
+// Meow some number of times
+void meow(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("meow\n");
+    }
+}
