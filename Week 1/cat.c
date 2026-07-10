@@ -7,6 +7,7 @@ int main(void)
  if (n < 0 )
  {
     n = get_int("whats's n?");
+    if (n < 0)
  }
 
  for (int i = 0; i < n; i++)
