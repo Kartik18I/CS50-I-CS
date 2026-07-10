@@ -2,15 +2,16 @@
 #include<stdio.h>
 
 //Prototype
-void meow(int n);
+void meow(void);
 
 int main (void)
 {
-    meow(3);
+    int n = get_int("what's n?");
+    meow();
 }
 
 
-void meow(int n)
+void meow(void)
 {
     for (int i = 0; i < n; i++)
 {
