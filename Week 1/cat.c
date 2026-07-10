@@ -4,6 +4,10 @@
 int main(void)
 {
  int n = get_int("what's n?");
+ if (n < 0 )
+ {
+    n = get_int("whats's n?");
+ }
 
  for (int i = 0; i < n; i++)
  {
