@@ -2,7 +2,7 @@
 
 ![Course](https://img.shields.io/badge/Harvard-CS50x%202026-red)
 ![Language](https://img.shields.io/badge/Language-C%20%7C%20Python%20%7C%20SQL-blue)
-![Progress](https://img.shields.io/badge/Progress-Week%202-success)
+![Progress](https://img.shields.io/badge/Progress-Week%203%20Completed-brightgreen)
 
 ## About
 
@@ -21,7 +21,7 @@ My goal is to develop a strong foundation in Computer Science, Software Engineer
 | Week 0 | Scratch | ✅ Completed |
 | Week 1 | C | ✅ Completed |
 | Week 2 | Arrays | ✅ Completed |
-| Week 3 | Algorithms | ⬜ Pending |
+| Week 3 | Algorithms | ✅ Completed |
 | Week 4 | Memory | ⬜ Pending |
 | Week 5 | Data Structures | ⬜ Pending |
 | Week 6 | Python | ⬜ Pending |
@@ -54,16 +54,24 @@ CS50-I-CS/
 │       └── me/
 │
 ├── Week 2/
-│   ├── 1. Scrabble/
+│   ├── Scrabble/
 │   │   └── scrabble.c
-│   │
-│   ├── 2. Readability/
+│   ├── Readability/
 │   │   └── readability.c
-│   │
-│   └── 3. Caesar/
+│   └── Caesar/
 │       └── caesar.c
 │
 ├── Week 3/
+│   ├── plurality/
+│   │   └── plurality.c
+│   │
+│   ├── runoff/
+│   │   └── runoff.c
+│   │
+│   └── sort/
+│       ├── answers.txt
+│       └── sorting experiment files
+│
 ├── Week 4/
 ├── Week 5/
 ├── Week 6/
@@ -79,27 +87,23 @@ CS50-I-CS/
 
 **Status:** ✅ Completed
 
+Topics covered:
 - Scratch programming fundamentals
 - Computational thinking
 - Visual programming
 - Gym Transformation Challenge project
-
----
 
 ## Week 1 – C
 
 **Status:** ✅ Completed
 
 Topics covered:
-
 - C programming fundamentals
 - Variables and data types
 - Conditional statements
 - Loops
 - Functions
 - Basic problem solving
-
----
 
 ## Week 2 – Arrays
 
@@ -112,6 +116,30 @@ Topics covered:
 | Caesar | Implement encryption using a Caesar cipher | ✅ Completed |
 
 All three selected problem sets were checked using CS50 Check50 and submitted through CS50 Submit50.
+
+## Week 3 – Algorithms
+
+**Status:** ✅ Completed
+
+| Problem Set | Description | Status |
+|---|---|---|
+| Sort | Analyze and compare sorting algorithms | ✅ Completed |
+| Plurality | Implement a plurality voting election system | ✅ Completed |
+| Runoff | Implement a ranked-choice voting election system | ✅ Completed |
+
+All three selected problem sets passed their CS50 Check50 tests and were submitted through CS50 Submit50.
+
+**Key concepts learned:**
+- Linear Search
+- Binary Search
+- Bubble Sort
+- Selection Sort
+- Merge Sort
+- Big O and algorithm efficiency
+- Arrays of structures
+- Sorting and searching
+- Ranked-choice voting
+- Algorithm design and implementation
 
 ---
 
@@ -130,15 +158,8 @@ All three selected problem sets were checked using CS50 Check50 and submitted th
 - Character Manipulation
 - Basic Cryptography
 - Algorithms
-- Memory Management
-- Data Structures
-- Python
-- SQL
-- HTML
-- CSS
-- JavaScript
-- Flask
-- Software Development
+- Sorting and Searching
+- Algorithm Analysis
 
 ---
 
@@ -146,7 +167,8 @@ All three selected problem sets were checked using CS50 Check50 and submitted th
 
 This repository follows the coursework of **Harvard University's CS50x 2026**.
 
-Course Website:  
+Course Website:
+
 https://cs50.harvard.edu/x/
 
 ---
@@ -155,6 +177,5 @@ https://cs50.harvard.edu/x/
 
 **Kartik Gaikwad**
 
-- GitHub: https://github.com/Kartik18I
+- GitHub: https://github.com/Kartik181
 - LinkedIn: https://www.linkedin.com/in/kartik-gaikwad-6260ab294
-
