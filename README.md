@@ -2,25 +2,25 @@
 
 ![Course](https://img.shields.io/badge/Harvard-CS50x%202026-red)
 ![Language](https://img.shields.io/badge/Language-C%20%7C%20Python%20%7C%20SQL-blue)
-![Status](https://img.shields.io/badge/Progress-Week%200-success)
+![Progress](https://img.shields.io/badge/Progress-Week%202-success)
 
 ## About
 
-This repository contains my solutions, projects, and notes for **Harvard University's CS50x 2026: Introduction to Computer Science**.
+This repository contains my solutions, projects, and learning progress for **Harvard University's CS50x 2026: Introduction to Computer Science**.
 
-Throughout this course, I will document my learning journey by completing each week's problem sets, projects, and additional practice exercises.
+Throughout this course, I document my learning journey by completing weekly problem sets, projects, and additional programming exercises.
 
-My goal is to build a strong foundation in Computer Science, Software Engineering, and Problem Solving while maintaining clean, organized, and well-documented code.
+My goal is to develop a strong foundation in Computer Science, Software Engineering, and Problem Solving while maintaining clean, organized, and well-documented code.
 
 ---
 
 ## Course Progress
 
 | Week | Topic | Status |
-|------|-------|--------|
+|---|---|---|
 | Week 0 | Scratch | ✅ Completed |
-| Week 1 | C | ⏳ In Progress |
-| Week 2 | Arrays | ⬜ Pending |
+| Week 1 | C | ✅ Completed |
+| Week 2 | Arrays | ✅ Completed |
 | Week 3 | Algorithms | ⬜ Pending |
 | Week 4 | Memory | ⬜ Pending |
 | Week 5 | Data Structures | ⬜ Pending |
@@ -34,29 +34,84 @@ My goal is to build a strong foundation in Computer Science, Software Engineerin
 
 ## Repository Structure
 
-```
-CS50-I-CS
+```text
+CS50-I-CS/
 │
 ├── README.md
 │
-├── Week 0
+├── Week 0/
 │   ├── README.md
 │   ├── Gym_Transformation_Challenge.sb3
 │   ├── chat.py
 │   ├── chat1.py
 │   └── chat2.py
 │
-├── Week 1
-├── Week 2
-├── Week 3
-├── Week 4
-├── Week 5
-├── Week 6
-├── Week 7
-├── Week 8
-├── Week 9
-└── Final Project
+├── Week 1/
+│   └── pset1/
+│       ├── credit/
+│       ├── hello/
+│       ├── mario-less/
+│       └── me/
+│
+├── Week 2/
+│   ├── 1. Scrabble/
+│   │   └── scrabble.c
+│   │
+│   ├── 2. Readability/
+│   │   └── readability.c
+│   │
+│   └── 3. Caesar/
+│       └── caesar.c
+│
+├── Week 3/
+├── Week 4/
+├── Week 5/
+├── Week 6/
+├── Week 7/
+├── Week 8/
+├── Week 9/
+└── Final Project/
 ```
+
+---
+
+## Week 0 – Scratch
+
+**Status:** ✅ Completed
+
+- Scratch programming fundamentals
+- Computational thinking
+- Visual programming
+- Gym Transformation Challenge project
+
+---
+
+## Week 1 – C
+
+**Status:** ✅ Completed
+
+Topics covered:
+
+- C programming fundamentals
+- Variables and data types
+- Conditional statements
+- Loops
+- Functions
+- Basic problem solving
+
+---
+
+## Week 2 – Arrays
+
+**Status:** ✅ Completed
+
+| Problem Set | Description | Status |
+|---|---|---|
+| Scrabble | Calculate and compare word scores using arrays | ✅ Completed |
+| Readability | Calculate reading grade levels using the Coleman-Liau index | ✅ Completed |
+| Caesar | Implement encryption using a Caesar cipher | ✅ Completed |
+
+All three selected problem sets were checked using CS50 Check50 and submitted through CS50 Submit50.
 
 ---
 
@@ -66,8 +121,16 @@ CS50-I-CS
 - Problem Solving
 - Scratch Programming
 - C Programming
-- Memory Management
+- Variables and Data Types
+- Conditional Statements
+- Loops and Functions
+- Arrays
+- String Manipulation
+- Command-Line Arguments
+- Character Manipulation
+- Basic Cryptography
 - Algorithms
+- Memory Management
 - Data Structures
 - Python
 - SQL
@@ -83,7 +146,7 @@ CS50-I-CS
 
 This repository follows the coursework of **Harvard University's CS50x 2026**.
 
-Course Website:
+Course Website:  
 https://cs50.harvard.edu/x/
 
 ---
@@ -92,8 +155,6 @@ https://cs50.harvard.edu/x/
 
 **Kartik Gaikwad**
 
-GitHub:
-https://github.com/Kartik18I
+- GitHub: https://github.com/Kartik18I
+- LinkedIn: https://www.linkedin.com/in/kartik-gaikwad-6260ab294
 
-LinkedIn:
-www.linkedin.com/in/kartik-gaikwad-6260ab294
