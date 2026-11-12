@@ -1,0 +1,12 @@
+sort1 uses: Bubble Sort
+
+How do you know?:Bubble Sort compares adjacent elements.It swaps elements that are in the wrong order.It can stop early when no swaps are needed, explaining why sorted input was much faster.
+
+
+sort2 uses: Merge Sort
+
+How do you know?:Merge Sort divides the list into smaller parts.It sorts those parts recursively.It merges them back together in sorted order.Its execution time remained very low with 50,000 numbers.
+
+sort3 uses:  Selection Sort
+
+How do you know?:Selection Sort searches for the smallest element in the unsorted portion.It moves that element into its correct position.It continues searching even when the input is already sorted.
