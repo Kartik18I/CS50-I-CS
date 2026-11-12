@@ -177,5 +177,5 @@ https://cs50.harvard.edu/x/
 
 **Kartik Gaikwad**
 
-- GitHub: https://github.com/Kartik181
+- GitHub: https://github.com/Kartik18I
 - LinkedIn: https://www.linkedin.com/in/kartik-gaikwad-6260ab294
