@@ -2,7 +2,7 @@
 
 ![Course](https://img.shields.io/badge/Harvard-CS50x%202026-red)
 ![Language](https://img.shields.io/badge/Language-C%20%7C%20Python%20%7C%20SQL-blue)
-![Progress](https://img.shields.io/badge/Progress-Week%204%20Completed-brightgreen)
+![Progress](https://img.shields.io/badge/Progress-Week%205%20Completed-brightgreen)
 
 ## About
 
@@ -23,7 +23,7 @@ My goal is to develop a strong foundation in Computer Science, Software Engineer
 | Week 2 | Arrays | ✅ Completed |
 | Week 3 | Algorithms | ✅ Completed |
 | Week 4 | Memory | ✅ Completed |
-| Week 5 | Data Structures | ⬜ Pending |
+| Week 5 | Data Structures | ✅ Completed |
 | Week 6 | Python | ⬜ Pending |
 | Week 7 | SQL | ⬜ Pending |
 | Week 8 | HTML, CSS, JavaScript | ⬜ Pending |
@@ -67,34 +67,48 @@ CS50-I-CS/
 │   ├── runoff/
 │   │   └── runoff.c
 │   └── sort/
-│       ├── answers.txt
-│       └── sorting experiment files
+│       └── answers.txt
 │
 ├── Week 4/
 │   ├── volume/
 │   │   └── volume.c
-│   │
 │   ├── filter-more/
 │   │   ├── helpers.c
 │   │   ├── helpers.h
 │   │   ├── filter.c
-│   │   ├── Makefile
-│   │   └── Additional filter files
-│   │
+│   │   └── Makefile
 │   └── recover/
 │       └── recover.c
 │
 ├── Week 5/
+│   │
+│   ├── inheritance/
+│   │   ├── inheritance
+│   │   └── inheritance.c
+│   │
+│   └── speller/
+│       └── speller/
+│           ├── dictionaries/
+│           │   ├── large
+│           │   └── small
+│           │
+│           ├── keys/
+│           ├── texts/
+│           │
+│           ├── dictionary.c
+│           ├── dictionary.h
+│           ├── dictionary.o
+│           ├── Makefile
+│           ├── speller
+│           ├── speller.c
+│           ├── speller.o
+│           └── speller50
+│
 ├── Week 6/
 ├── Week 7/
 ├── Week 8/
 ├── Week 9/
-└── Final Project/
-├── Week 5/
-├── Week 6/
-├── Week 7/
-├── Week 8/
-├── Week 9/
+│
 └── Final Project/
 ```
 
@@ -202,22 +216,111 @@ Week 4 focuses on memory management, pointers, file handling, binary data proces
 - CS50 Submit50
 - Linux Command Line
 
-**Verification Results:**
+---
+
+## Week 5 – Data Structures
+
+**Status:** ✅ Completed
+
+Week 5 focuses on implementing and understanding fundamental data structures, dynamic memory allocation, pointers, linked lists, hash tables, and efficient data retrieval.
+
+### Problem Sets
+
+| Problem Set | Description | Status |
+|---|---|---|
+| Inheritance | Simulate the inheritance of blood types across multiple generations using structures and pointers | ✅ Completed |
+| Speller | Implement a spell checker using a hash table and linked lists | ✅ Completed |
+
+### 1. Inheritance
+
+**File:** `inheritance/inheritance.c`
+
+Implemented a genetic inheritance simulation that models how blood-type alleles are passed from parents to children across multiple generations.
+
+**Key Concepts Learned:**
+- Structures in C
+- Pointers and memory addresses
+- Dynamic memory allocation using `malloc()`
+- Recursive generation of family trees
+- Genetic inheritance simulation
+- Memory deallocation using `free()`
+
+### 2. Speller
+
+**Folder:** `speller/speller/`
+
+Implemented a dictionary-based spell checker using a hash table with separate chaining through linked lists.
+
+**Key Components:**
+
+| Component | Purpose |
+|---|---|
+| `load()` | Load dictionary words into memory |
+| `hash()` | Generate a hash index for each word |
+| `check()` | Check whether a word exists in the dictionary |
+| `size()` | Return the total number of dictionary words |
+| `unload()` | Release allocated memory and free linked-list nodes |
+
+**Key Concepts Learned:**
+- Hash Tables
+- Hash Functions
+- Linked Lists
+- Nodes and Pointers
+- Separate Chaining
+- Collision Handling
+- Dynamic Memory Allocation
+- `malloc()` and `free()`
+- String Comparison using `strcmp()`
+- Case-insensitive string comparison using `strcasecmp()`
+- File Handling
+- Time Complexity and Algorithm Efficiency
+
+### Speller – Verification Results
+
+Successfully compiled and executed the Speller program.
+
+**CS50 Check50 Results:**
 
 | Test | Result |
 |---|---|
-| recover.c exists | ✅ Passed |
-| Compiles successfully | ✅ Passed |
-| Handles missing forensic image | ✅ Passed |
-| Recovers 000.jpg correctly | ✅ Passed |
-| Recovers middle images correctly | ✅ Passed |
-| Recovers 049.jpg correctly | ✅ Passed |
-| Free of memory errors | ✅ Passed |
+| dictionary.c exists | ✅ Passed |
+| Speller compiles | ✅ Passed |
+| Handles most basic words properly | ✅ Passed |
+| Handles minimum-length (1-character) words | ✅ Passed |
+| Handles maximum-length (45-character) words | ✅ Passed |
+| Handles words with apostrophes properly | ✅ Passed |
+| Spell-checking is case-insensitive | ✅ Passed |
+| Handles substrings properly | ✅ Passed |
+| Handles large dictionary (hash collisions) properly | ✅ Passed |
+| Program is free of memory errors | ✅ Passed |
 
-**Final Output:**
-- 50 JPEG images successfully recovered.
-- All 7 CS50 Check50 tests passed.
-- Successfully submitted through CS50 Submit50.
+**Execution Performance (Large Dictionary):**
+
+| Metric | Result |
+|---|---:|
+| Words in Dictionary | 143,091 |
+| Words in Text | 17,756 |
+| Words Misspelled | 955 |
+| Time in Load | 0.03 seconds |
+| Time in Check | 1.17 seconds |
+| Time in Size | 0.00 seconds |
+| Time in Unload | 0.01 seconds |
+| Total Execution Time | 1.21 seconds |
+
+*Execution times are from one local run and may vary depending on the environment.*
+
+**Submission:** Successfully uploaded through CS50 Submit50.
+
+### Week 5 – Tools Used
+
+- C Programming
+- GCC Compiler
+- Hash Tables
+- Linked Lists
+- CS50 Check50
+- CS50 Submit50
+- Linux Command Line
+- Git and GitHub
 
 ---
 
@@ -240,9 +343,12 @@ Week 4 focuses on memory management, pointers, file handling, binary data proces
 - Sorting and Searching
 - Algorithm Analysis
 - Big O Notation
-- Data Structures Fundamentals
-- Binary Data Processing
+- Data Structures
+- Linked Lists
+- Hash Tables
 - Memory Management
+- Dynamic Memory Allocation
+- Binary Data Processing
 - File I/O
 
 ### Tools and Development
@@ -273,3 +379,4 @@ https://cs50.harvard.edu/x/
 
 - GitHub: https://github.com/Kartik18I
 - LinkedIn: https://www.linkedin.com/in/kartik-gaikwad-6260ab294
+
