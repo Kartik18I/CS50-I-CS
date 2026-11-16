@@ -2,7 +2,7 @@
 
 ![Course](https://img.shields.io/badge/Harvard-CS50x%202026-red)
 ![Language](https://img.shields.io/badge/Language-C%20%7C%20Python%20%7C%20SQL-blue)
-![Progress](https://img.shields.io/badge/Progress-Week%205%20Completed-brightgreen)
+![Progress](https://img.shields.io/badge/Progress-Week%206%20Completed-brightgreen)
 
 ## About
 
@@ -24,7 +24,7 @@ My goal is to develop a strong foundation in Computer Science, Software Engineer
 | Week 3 | Algorithms | ✅ Completed |
 | Week 4 | Memory | ✅ Completed |
 | Week 5 | Data Structures | ✅ Completed |
-| Week 6 | Python | ⬜ Pending |
+| Week 6 | Python | ✅ Completed |
 | Week 7 | SQL | ⬜ Pending |
 | Week 8 | HTML, CSS, JavaScript | ⬜ Pending |
 | Week 9 | Flask | ⬜ Pending |
@@ -81,7 +81,6 @@ CS50-I-CS/
 │       └── recover.c
 │
 ├── Week 5/
-│   │
 │   ├── inheritance/
 │   │   ├── inheritance
 │   │   └── inheritance.c
@@ -89,22 +88,36 @@ CS50-I-CS/
 │   └── speller/
 │       └── speller/
 │           ├── dictionaries/
-│           │   ├── large
-│           │   └── small
-│           │
 │           ├── keys/
 │           ├── texts/
-│           │
 │           ├── dictionary.c
 │           ├── dictionary.h
-│           ├── dictionary.o
 │           ├── Makefile
 │           ├── speller
 │           ├── speller.c
-│           ├── speller.o
 │           └── speller50
 │
 ├── Week 6/
+│   ├── credit/
+│   │   └── credit.py
+│   │
+│   ├── dna/
+│   │   ├── databases/
+│   │   │   ├── large.csv
+│   │   │   └── small.csv
+│   │   ├── sequences/
+│   │   │   └── DNA sequence text files
+│   │   └── dna.py
+│   │
+│   ├── hello/
+│   │   └── hello.py
+│   │
+│   ├── mario-more/
+│   │   └── mario.py
+│   │
+│   └── readability/
+│       └── readability.py
+│
 ├── Week 7/
 ├── Week 8/
 ├── Week 9/
@@ -160,7 +173,7 @@ All three selected problem sets were checked using CS50 Check50 and submitted th
 
 All three selected problem sets passed their CS50 Check50 tests and were submitted through CS50 Submit50.
 
-**Key concepts learned:**
+**Key Concepts Learned:**
 - Linear Search
 - Binary Search
 - Bubble Sort
@@ -324,19 +337,214 @@ Successfully compiled and executed the Speller program.
 
 ---
 
+## Week 6 – Python
+
+**Status:** ✅ Completed
+
+Week 6 introduces Python programming and explores how Python simplifies programming concepts previously implemented in C.
+
+This week focuses on Python syntax, functions, loops, strings, dictionaries, file handling, command-line arguments, regular expressions, and data processing.
+
+### Problem Sets
+
+| Problem Set | Description | Status |
+|---|---|---|
+| Hello | Create a program that greets the user by name | ✅ Submitted |
+| Mario (More) | Recreate a half-pyramid and inverted half-pyramid using hashes | ✅ Submitted |
+| Credit | Validate credit card numbers using Luhn's Algorithm and identify card types | ✅ Submitted |
+| Readability | Calculate reading grade levels using the Coleman-Liau index | ✅ Submitted |
+| DNA | Identify individuals using STR (Short Tandem Repeat) analysis and DNA sequence matching | ✅ Submitted |
+
+All five Week 6 problem sets have been completed and uploaded through CS50 Submit50.
+
+### 1. Hello
+
+**File:** `hello/hello.py`
+
+Implemented a Python program that asks the user for their name and prints a personalized greeting.
+
+**Key Concepts Learned:**
+- Python syntax
+- Variables
+- User input using `get_string()`
+- String formatting using f-strings
+- Output using `print()`
+
+### 2. Mario (More)
+
+**File:** `mario-more/mario.py`
+
+Implemented a program that generates two aligned pyramids using hashes (`#`), separated by a gap.
+
+The program prompts the user for the pyramid height and validates that the input is between 1 and 8.
+
+**Key Concepts Learned:**
+- Loops using `for` and `while`
+- `range()` function
+- Input validation
+- String multiplication
+- String concatenation
+- Nested loops and pattern generation
+- Formatting spaces and hashes
+
+### 3. Credit
+
+**File:** `credit/credit.py`
+
+Implemented a credit card validation program using Luhn's Algorithm.
+
+The program checks whether a credit card number is valid and identifies the card network as American Express, MasterCard, or Visa.
+
+**Key Concepts Learned:**
+- Luhn's Algorithm
+- String manipulation
+- Integer conversion
+- `reversed()` function
+- Modulo operator (`%`)
+- Integer division (`//`)
+- Conditional statements
+- Credit card number length and prefix validation
+
+### 4. Readability
+
+**File:** `readability/readability.py`
+
+Implemented a program that calculates the reading grade level of a text using the Coleman-Liau index.
+
+The program counts letters, words, and sentences before applying the formula:
+
+**Coleman-Liau Index:**
+
+`index = 0.0588 × L - 0.296 × S - 15.8`
+
+Where:
+
+- `L` = Average number of letters per 100 words.
+- `S` = Average number of sentences per 100 words.
+
+The final result is rounded to the nearest integer and displayed as a reading grade level.
+
+**Key Concepts Learned:**
+- String iteration
+- Character checking using `isalpha()`
+- Counting letters, words, and sentences
+- String processing
+- Mathematical formulas
+- Floating-point arithmetic
+- Rounding using `round()`
+- Conditional statements
+
+### 5. DNA
+
+**Folder:** `dna/`
+
+Implemented a DNA profiling program that identifies individuals by analyzing Short Tandem Repeats (STRs) in a DNA sequence.
+
+The program reads a CSV database containing individuals and their STR counts, processes a DNA sequence, calculates the longest consecutive repetitions of each STR, and compares the results against the database.
+
+**Project Structure:**
+
+```text
+dna/
+│
+├── databases/
+│   ├── large.csv
+│   └── small.csv
+│
+├── sequences/
+│   ├── 1.txt
+│   ├── 2.txt
+│   ├── 3.txt
+│   └── ...
+│
+└── dna.py
+```
+
+**Key Components:**
+
+| Component | Purpose |
+|---|---|
+| `main()` | Controls the overall DNA identification process |
+| `longest_match()` | Finds the longest consecutive repetition of an STR |
+| `csv.DictReader()` | Reads DNA profiles from CSV databases |
+| Dictionary | Stores the calculated STR counts |
+| Database matching | Compares calculated STR counts with individual DNA profiles |
+
+**Key Concepts Learned:**
+- DNA profiling fundamentals
+- Short Tandem Repeats (STRs)
+- CSV file processing
+- `csv` module
+- `csv.DictReader()`
+- Dictionaries and key-value pairs
+- Lists and loops
+- String slicing
+- String matching
+- Functions and return values
+- Command-line arguments using `sys.argv`
+- File handling using `open()`
+- Algorithm design and pattern matching
+
+### Week 6 – Verification and Submission
+
+**Manual Testing:**
+
+| Problem | Testing |
+|---|---|
+| Hello | Tested personalized greetings |
+| Mario (More) | Tested pyramid heights and input validation |
+| Credit | Tested card numbers and card identification |
+| Readability | Tested different text samples and grade levels |
+| DNA | Tested DNA sequences against small CSV databases |
+
+**Submission Status:**
+
+| Problem Set | Submit50 |
+|---|---|
+| Hello | ✅ Submitted |
+| Mario (More) | ✅ Submitted |
+| Credit | ✅ Submitted |
+| Readability | ✅ Submitted |
+| DNA | ✅ Submitted |
+
+All five problem sets were uploaded through CS50 Submit50.
+
+### Week 6 – Tools and Technologies Used
+
+- Python Programming
+- CS50 Python Library
+- CSV Module
+- Dictionaries and Lists
+- String Manipulation
+- File Handling
+- Command-Line Arguments
+- CS50 Check50
+- CS50 Submit50
+- Style50
+- GitHub Codespaces
+- Linux Command Line
+- Git and GitHub
+
+---
+
 ## Skills Covered
 
 ### Programming
+
 - Scratch Programming
 - C Programming
-- Python Fundamentals
+- Python Programming
 - Variables and Data Types
 - Conditional Statements
 - Loops and Functions
 - Arrays and Strings
-- Pointers and File Handling
+- Dictionaries and Lists
+- Pointers and Memory Management
+- File Handling
+- Command-Line Arguments
 
 ### Computer Science Fundamentals
+
 - Computational Thinking
 - Problem Solving
 - Algorithms
@@ -350,8 +558,12 @@ Successfully compiled and executed the Speller program.
 - Dynamic Memory Allocation
 - Binary Data Processing
 - File I/O
+- Pattern Matching
+- DNA Profiling
+- Algorithm Design
 
 ### Tools and Development
+
 - Git and GitHub
 - GitHub Codespaces
 - VS Code
@@ -359,6 +571,7 @@ Successfully compiled and executed the Speller program.
 - GCC Compiler
 - CS50 Check50
 - CS50 Submit50
+- Style50
 - Make and Makefiles
 
 ---
